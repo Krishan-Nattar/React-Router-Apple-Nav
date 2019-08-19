@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.svg{
+  width:50px;
+  height:50px;
+}
+.icon-group{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 12px;
+  
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.subItems{
+  background-color: #f7f7f7;
+  height: 100px;
+  display:flex;
+  justify-content: space-around;
+
+}
+
+.subItems2{
+  max-width: 600px;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-self: center;
+  /* animation: slide-in 0.2s ease-in;
+  transition: 1s;  */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.blackLine{
+  background-color: #333333;
+  height: 50px;
+  display:flex;
+  justify-content: space-around;
+
+  
+}
+.navigation{
+  flex-grow: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  align-self: center;
+  
+  display:flex;
+  justify-content: space-around;
+}
+
+.navigation a{
+  text-decoration: none;
+  color:white;
+}
+
+
+.slide-appear{
+  opacity:0;
+  z-index:1;
+  transition: 1000ms ease-out;
+  transform: translateX(25px);
+}
+
+.slide-appear-active{
+  opacity:1;
+  transition: 1000ms ease-out;
+  transform: translateX(0px)
+}
+
+.slide-enter{
+  opacity:0;
+  z-index:1;
+  transition: 1000ms ease-out;
+  transform: translateX(25px);
+}
+
+.slide-enter-active{
+  opacity:1;
+  transition: 1000ms ease-out;
+  transform: translateX(0px)
+}
+
+.slide-exit{
+  opacity:1;
+  transition: opacity 1000ms ease-out;
+}
+
+.slide-exit-active{
+  opacity:0;
+  transition:opacity 1000ms ease-out;
+}
+
+.slide-exit-done{
+  opacity:0;
+  transition: opacity 1000ms ease-out;
+}
